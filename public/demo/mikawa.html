@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社 三河プレシジョン | 精密金属加工・専用機部品製造</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        serif: ['"Noto Serif JP"', 'serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        metallic: {
+                            100: '#f1f5f9',
+                            400: '#94a3b8',
+                            600: '#475569',
+                            800: '#1e293b',
+                        },
+                        forge: {
+                            500: '#d97706',
+                            600: '#b45309',
+                        },
+                        brass: {
+                            400: '#fbbf24',
+                            500: '#d97706',
+                            600: '#b45309',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .bg-hero {
+            background-image: url('./sample_picture_V.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-shadow-lg { text-shadow: 0 4px 8px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body class="font-sans text-metallic-800 bg-white leading-loose tracking-wide">
+
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="font-serif font-bold text-2xl text-navy-900 tracking-widest">
+                <span class="text-brass-500 mr-2">◆</span>株式会社 三河プレシジョン
+            </div>
+            <div class="hidden md:block">
+                <a href="#contact" class="bg-navy-900 hover:bg-navy-800 text-white px-6 py-3 text-sm font-bold transition-colors">
+                    お問い合わせ
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-screen min-h-[600px] bg-hero flex items-center">
+        <div class="absolute inset-0 bg-navy-950/75"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-16">
+            <h1 class="font-serif text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 text-shadow-lg">
+                ミクロン単位の精度で、<br>日本のモノづくりを支える。
+            </h1>
+            <p class="text-metallic-100 text-lg md:text-xl leading-relaxed max-w-3xl font-medium tracking-wider">
+                愛知県刈谷市の精密金属加工・専用機部品製造。<br>
+                熟練の職人技と最新鋭のマシニングセンタを融合させ、<br class="hidden md:block">
+                試作から量産まで、あらゆるニーズに確かな品質でお応えします。
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="火花を散らす職人の金属加工" class="w-full h-auto shadow-2xl object-cover aspect-[4/3]">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="font-serif text-3xl lg:text-4xl text-navy-900 font-bold mb-8">
+                        三河の地で培った、<br>妥協なきモノづくり
+                    </h2>
+                    <div class="w-12 h-1 bg-brass-500 mb-8"></div>
+                    <p class="mb-6">
+                        自動車産業の中心地である愛知県三河エリア。株式会社三河プレシジョンは、この地で長年にわたり金属加工の研鑽を積んでまいりました。
+                    </p>
+                    <p class="mb-6">
+                        私たちが大切にしているのは、「図面以上の価値を提供する」という姿勢です。単に指定通りのものを削り出すだけでなく、後工程の組み付けやすさや耐久性までを見据えたモノづくりを行っています。
+                    </p>
+                    <p>
+                        これからも地元産業の発展に貢献するとともに、移り変わる時代のニーズに技術力で応え続ける、信頼のパートナーであり続けます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 lg:py-32 bg-metallic-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl lg:text-4xl text-navy-900 font-bold mb-4">三河プレシジョンが選ばれる理由</h2>
+                <div class="w-12 h-1 bg-brass-500 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                <div class="bg-white p-8 shadow-lg border-t-4 border-brass-500 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="h-48 overflow-hidden mb-6 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="精密な作業を行う職人の手元" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900 mb-4">
+                        <span class="text-brass-500 block text-sm mb-1 font-sans">強み 1</span>
+                        手先の感覚が生きる<br>「熟練の職人技術」
+                    </h3>
+                    <p class="text-sm leading-relaxed text-metallic-600">
+                        最新の機械を動かすのも、最後は人の「目」と「手」です。当社には業界歴20年以上のベテラン職人が多数在籍。刃物の微細な摩耗音や金属の熱膨張を見極め、図面には表れないミクロン単位の精度調整を実現します。他社で断られた難形状の加工も、ぜひ一度ご相談ください。
+                    </p>
+                </div>
+                <div class="bg-white p-8 shadow-lg border-t-4 border-brass-500 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="h-48 overflow-hidden mb-6 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="最新の加工設備" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900 mb-4">
+                        <span class="text-brass-500 block text-sm mb-1 font-sans">強み 2</span>
+                        高難度・複合加工を可能にする<br>「最新設備の導入」
+                    </h3>
+                    <p class="text-sm leading-relaxed text-metallic-600">
+                        職人の技術を最大限に引き出すため、最新の5軸マシニングセンタや複合NC旋盤を積極的に導入しています。これにより、工程集約によるコスト削減と、段取り替えによるヒューマンエラーの防止を両立。複雑な形状の部品も、高精度かつ安定した品質で生産できる体制を整えています。
+                    </p>
+                </div>
+                <div class="bg-white p-8 shadow-lg border-t-4 border-brass-500 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="h-48 overflow-hidden mb-6 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="完成した精密部品群" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900 mb-4">
+                        <span class="text-brass-500 block text-sm mb-1 font-sans">強み 3</span>
+                        お客様のピンチを救う<br>「小ロット・短納期対応」
+                    </h3>
+                    <p class="text-sm leading-relaxed text-metallic-600">
+                        「開発テスト用に1個だけ欲しい」「ラインストップを防ぐため、明日までに特急で部品が必要」といったご要望にも柔軟に対応いたします。社内の徹底した工程管理と、地元の熱処理・表面処理ネットワークを活用し、最短ルートでの納品をお約束します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="font-serif text-3xl lg:text-4xl text-navy-900 font-bold mb-4">対応業務と加工技術</h2>
+                <div class="w-12 h-1 bg-brass-500"></div>
+                <p class="mt-6 text-lg">多品種少量生産から中ロットの量産まで、幅広い加工ニーズに対応いたします。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-6 border-b border-metallic-100 pb-2 flex items-center">
+                        <span class="w-2 h-2 bg-forge-500 mr-3"></span>主な業務内容
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-brass-500 mr-2">✔</span>
+                            <span>自動車関連向け 試作部品の切削加工</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brass-500 mr-2">✔</span>
+                            <span>自動化ライン用 治工具・専用機部品の製造</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brass-500 mr-2">✔</span>
+                            <span>精密シャフト・ギア・ブラケット等の複合加工</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-6 border-b border-metallic-100 pb-2 flex items-center">
+                        <span class="w-2 h-2 bg-forge-500 mr-3"></span>対応素材
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-brass-500 mr-2">✔</span>
+                            <span>鉄、鋼材（SS400、S45C、SCM415 等）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brass-500 mr-2">✔</span>
+                            <span>アルミニウム（A2017、A5052、A7075 等）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brass-500 mr-2">✔</span>
+                            <span>ステンレス（SUS303、SUS304、SUS316 等）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brass-500 mr-2">✔</span>
+                            <span>真鍮、銅合金、樹脂エンプラ全般</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-metallic-100 p-8 border-l-4 border-navy-900">
+                <h3 class="text-lg font-bold text-navy-900 mb-2">表面処理・熱処理（協力工場との連携）</h3>
+                <p class="text-metallic-600">無電解ニッケルメッキ、アルマイト、黒染め、高周波焼入れ等の一貫手配が可能。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 lg:py-32 bg-metallic-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl lg:text-4xl text-navy-900 font-bold mb-4">会社概要</h2>
+                <div class="w-12 h-1 bg-brass-500 mx-auto"></div>
+            </div>
+
+            <div class="bg-white shadow-xl">
+                <table class="w-full border-collapse">
+                    <tbody>
+                        <tr class="border-b border-metallic-100">
+                            <th class="py-6 px-6 bg-slate-50 text-left font-bold text-navy-900 w-1/3 align-top">会社名</th>
+                            <td class="py-6 px-6 text-metallic-800">株式会社 三河プレシジョン</td>
+                        </tr>
+                        <tr class="border-b border-metallic-100">
+                            <th class="py-6 px-6 bg-slate-50 text-left font-bold text-navy-900 align-top">代表取締役</th>
+                            <td class="py-6 px-6 text-metallic-800">刈谷 健太郎</td>
+                        </tr>
+                        <tr class="border-b border-metallic-100">
+                            <th class="py-6 px-6 bg-slate-50 text-left font-bold text-navy-900 align-top">設立</th>
+                            <td class="py-6 px-6 text-metallic-800">1998年4月</td>
+                        </tr>
+                        <tr class="border-b border-metallic-100">
+                            <th class="py-6 px-6 bg-slate-50 text-left font-bold text-navy-900 align-top">資本金</th>
+                            <td class="py-6 px-6 text-metallic-800">1,000万円</td>
+                        </tr>
+                        <tr class="border-b border-metallic-100">
+                            <th class="py-6 px-6 bg-slate-50 text-left font-bold text-navy-900 align-top">所在地</th>
+                            <td class="py-6 px-6 text-metallic-800">〒448-0000 愛知県刈谷市〇〇町1-2-3</td>
+                        </tr>
+                        <tr class="border-b border-metallic-100">
+                            <th class="py-6 px-6 bg-slate-50 text-left font-bold text-navy-900 align-top">事業内容</th>
+                            <td class="py-6 px-6 text-metallic-800">精密金属切削加工、専用機部品・治工具の製造</td>
+                        </tr>
+                        <tr class="border-b border-metallic-100">
+                            <th class="py-6 px-6 bg-slate-50 text-left font-bold text-navy-900 align-top">主要設備</th>
+                            <td class="py-6 px-6 text-metallic-800">
+                                5軸マシニングセンタ（2台）<br>
+                                立形マシニングセンタ（3台）<br>
+                                NC旋盤（4台）<br>
+                                汎用フライス・旋盤<br>
+                                三次元測定機
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="py-6 px-6 bg-slate-50 text-left font-bold text-navy-900 align-top">取引銀行</th>
+                            <td class="py-6 px-6 text-metallic-800">〇〇信用金庫 刈谷支店</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 lg:py-32 bg-navy-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, transparent 1px, transparent 20px);"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-3xl lg:text-4xl font-bold mb-6">図面1枚から、お気軽にご相談ください。</h2>
+            <p class="text-metallic-100 mb-10 text-lg">
+                加工の可否やコストダウンのご提案など、技術的なご相談も承っております。<br>
+                相見積もりも歓迎いたします。お急ぎの場合はお電話にてご連絡ください。
+            </p>
+
+            <div class="bg-navy-800 p-8 border border-metallic-600 mb-10 inline-block w-full max-w-2xl">
+                <div class="text-sm text-brass-400 mb-2 font-bold tracking-widest">お電話でのご相談</div>
+                <div class="font-serif text-4xl lg:text-5xl font-bold mb-4 tracking-wider">
+                    0566-00-0000
+                </div>
+                <div class="text-sm text-metallic-100">
+                    （営業時間：8:30 ～ 17:30 土日定休）
+                </div>
+            </div>
+
+            <div>
+                <a href="#" class="inline-block bg-forge-500 hover:bg-forge-600 text-white font-bold text-lg py-5 px-10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 w-full md:w-auto">
+                    Webからのお見積り・お問い合わせはこちら<br class="block md:hidden"><span class="text-sm font-normal ml-2">（24時間受付）</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-950 text-metallic-400 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Mikawa Precision Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

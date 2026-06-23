@@ -1,0 +1,14 @@
+/* 1. まずは外部フォントの読み込み（絶対1行目） */
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap');
+
+/* 2. 次にTailwindの読み込み */
+@import "tailwindcss";
+
+/* 3. その後に設定や個別のスタイルを書く */
+@theme {
+  --font-sans: "BIZ UDPGothic", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  font-family: "BIZ UDPGothic", sans-serif;
+}
