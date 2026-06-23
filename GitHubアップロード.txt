@@ -11,3 +11,8 @@ git commit -m "Initial commit: EasyJ Studio Website with i18n"
 
 # 4. GitHubにアップロード！
 git push -u origin main
+
+
+git add .
+git commit -m "fix: remove unused Guidelines import"
+git push origin main
