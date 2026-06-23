@@ -3,11 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Concept from './pages/Concept';
-import Profile from './pages/Profile';
-import Contact from './pages/Contact';
-import Guidelines from './pages/Guidelines';
 import Local from './pages/Local';
 
 function App() {
