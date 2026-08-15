@@ -137,18 +137,70 @@ const Local = () => {
             <div className="md:w-2/3 flex justify-center gap-4">
               {/* 勤怠画面 */}
               <div className="relative w-1/2 max-w-[200px] rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] border-4 border-slate-800">
-                <img src="/ss_work.png" alt="勤怠管理アプリ画面" className="w-full h-auto block" />
+                <img src="/local//ss_work.png" alt="勤怠管理アプリ画面" className="w-full h-auto block" />
               </div>
               {/* ダッシュボード画面 */}
               <div className="relative w-1/2 max-w-[200px] rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] border-4 border-slate-800">
-                <img src="/ss_order.png" alt="売上ダッシュボード画面" className="w-full h-auto block" />
+                <img src="/local/ss_order.png" alt="売上ダッシュボード画面" className="w-full h-auto block" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ④ お問い合わせフォーム */}
+      {/* ④お客様の声（利用者の声） */}
+      <section className="py-16 px-8 max-w-4xl mx-auto">
+        <div className="flex items-center gap-4 mb-12">
+          <h2 className="text-2xl font-bold">制作実績・お客様の声</h2>
+          <div className="h-[1px] bg-slate-200 flex-grow"></div>
+        </div>
+
+        {/* ▼大枠（お客様の声一覧を囲む少しグレーの背景）▼ */}
+        <div className="bg-slate-100 p-6 md:p-10 rounded-3xl border border-slate-200 space-y-12">
+          
+          {/* ▼ 1件目の事業者様ブロック ▼ */}
+          <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100">
+            
+            {/* 1. お名前 */}
+            <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+              {/* 名前の左に置く青いアクセントライン */}
+              <span className="w-2 h-6 bg-indigo-500 rounded-full inline-block"></span>
+              林 ひろとし 様
+            </h3>
+            
+            <a href="https://hirotoshi884.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-indigo-500 hover:text-indigo-700 hover:underline">
+            {/* 2. 写真（大きめ） */}
+            {/* aspect-videoで16:9の比率を保ちます。画像が用意できたら <img> のコメントアウトを外してください */}
+            <div className="w-full aspect-video bg-slate-100 rounded-xl overflow-hidden border border-slate-200 mb-6 flex items-center justify-center">
+              <span className="text-slate-400 font-bold tracking-widest">ここに制作物やお客様の写真</span>
+                <img src="/local/1-hayashi.png" alt="林ひろとし様 HP制作実績" className="w-full h-full object-cover" />
+            </div>
+            
+            {/* 3. コメント */}
+            <div className="text-slate-700 leading-relaxed text-lg">
+              <p>
+                最初に見せていただいたモックや、お伝えしたイメージ通りに作ってもらえました。修正も手早く、伝えたとおりに作成していただけたため、大変満足しています！
+              </p>
+              
+              {/* 必要であればサイトへのリンクも設置可能 */}
+              {/* 
+              <div className="mt-4">
+                <a href="https://hirotoshi884.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-indigo-500 hover:text-indigo-700 hover:underline">
+                  ▶ 制作したWebサイトはこちら
+                </a>
+              </div>
+              */}
+            </div>
+            </a>
+          </div>
+          {/* ▲ 1件目の事業者様ブロック ここまで ▲ */}
+
+          {/* 今後2件目以降が増えたら、上のブロック（<div className="bg-white ..."> 〜 </div>）をコピーしてこの下に追加していくだけでOKです */}
+
+        </div>
+      </section>
+
+      {/* ⑤ お問い合わせフォーム */}
       <section className="py-16 px-8 max-w-3xl mx-auto mb-24">
         <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-slate-100">
           <h2 className="text-2xl font-bold mb-4 text-center">お問い合わせ・ご相談</h2>
@@ -194,7 +246,6 @@ const Local = () => {
 
             <div>
               <label className="block text-sm font-bold text-slate-700 mb-2">会社名 / 屋号</label>
-              {/* 各inputに name 属性を追加しています */}
               <input type="text" name="company" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" placeholder="例：株式会社〇〇 / 居酒屋〇〇" />
             </div>
             
