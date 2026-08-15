@@ -13,7 +13,7 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/local" element={<Local />} />
+            <Route path="/" element={<Local />} />
 
           </Routes>
         </main>
