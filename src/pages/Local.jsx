@@ -137,11 +137,11 @@ const Local = () => {
             <div className="md:w-2/3 flex justify-center gap-4">
               {/* 勤怠画面 */}
               <div className="relative w-1/2 max-w-[200px] rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] border-4 border-slate-800">
-                <img src="/ss_work.png" alt="勤怠管理アプリ画面" className="w-full h-auto block" />
+                <img src="/local//ss_work.png" alt="勤怠管理アプリ画面" className="w-full h-auto block" />
               </div>
               {/* ダッシュボード画面 */}
               <div className="relative w-1/2 max-w-[200px] rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] border-4 border-slate-800">
-                <img src="/ss_order.png" alt="売上ダッシュボード画面" className="w-full h-auto block" />
+                <img src="/local/ss_order.png" alt="売上ダッシュボード画面" className="w-full h-auto block" />
               </div>
             </div>
           </div>
@@ -155,41 +155,47 @@ const Local = () => {
           <div className="h-[1px] bg-slate-200 flex-grow"></div>
         </div>
 
-        <div className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 relative overflow-hidden">
-          {/* 背景の巨大なクォーテーションアイコン（装飾） */}
-          <svg className="absolute top-4 left-6 w-24 h-24 text-indigo-50 opacity-50 transform -rotate-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-          </svg>
-
-          <div className="relative z-10">
-            {/* ▼ ここに頂いたコメントを貼り付け ▼ */}
-            <p className="text-lg md:text-xl text-slate-700 leading-loose font-medium mb-10">
-              最初に見せていただいたモックや、お伝えしたイメージ通りに作ってもらえました。修正も手早く、伝えたとおりに作成していただき、大変満足しています！
-            </p>
-
-            <div className="flex items-center gap-5">
-              {/* アイコン枠 */}
-              <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-2xl shadow-inner">
-                林
-              </div>
-              <div>
-                <p className="font-bold text-slate-800 text-lg mb-1">林 ひろとし 様</p>
-                
-                {/* 制作したHPへのリンク（URLを書き換えてください。不要なら aタグごと削除してOKです） */}
-                <a 
-                  href="https://hirotoshi884.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-sm font-medium text-indigo-500 hover:text-indigo-700 hover:underline inline-flex items-center"
-                >
-                  制作したWebサイトを見る
-                  <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+        {/* ▼大枠（お客様の声一覧を囲む少しグレーの背景）▼ */}
+        <div className="bg-slate-100 p-6 md:p-10 rounded-3xl border border-slate-200 space-y-12">
+          
+          {/* ▼ 1件目の事業者様ブロック ▼ */}
+          <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100">
+            
+            {/* 1. お名前 */}
+            <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+              {/* 名前の左に置く青いアクセントライン */}
+              <span className="w-2 h-6 bg-indigo-500 rounded-full inline-block"></span>
+              林 ひろとし 様
+            </h3>
+            
+            <a href="https://hirotoshi884.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-indigo-500 hover:text-indigo-700 hover:underline">
+            {/* 2. 写真（大きめ） */}
+            {/* aspect-videoで16:9の比率を保ちます。画像が用意できたら <img> のコメントアウトを外してください */}
+            <div className="w-full aspect-video bg-slate-100 rounded-xl overflow-hidden border border-slate-200 mb-6 flex items-center justify-center">
+              <span className="text-slate-400 font-bold tracking-widest">ここに制作物やお客様の写真</span>
+                <img src="/local/1-hayashi.png" alt="林ひろとし様 HP制作実績" className="w-full h-full object-cover" />
+            </div>
+            
+            {/* 3. コメント */}
+            <div className="text-slate-700 leading-relaxed text-lg">
+              <p>
+                最初に見せていただいたモックや、お伝えしたイメージ通りに作ってもらえました。修正も手早く、伝えたとおりに作成していただけたため、大変満足しています！
+              </p>
+              
+              {/* 必要であればサイトへのリンクも設置可能 */}
+              {/* 
+              <div className="mt-4">
+                <a href="https://hirotoshi884.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-indigo-500 hover:text-indigo-700 hover:underline">
+                  ▶ 制作したWebサイトはこちら
                 </a>
               </div>
+              */}
             </div>
+            </a>
           </div>
+          {/* ▲ 1件目の事業者様ブロック ここまで ▲ */}
+
+          {/* 今後2件目以降が増えたら、上のブロック（<div className="bg-white ..."> 〜 </div>）をコピーしてこの下に追加していくだけでOKです */}
 
         </div>
       </section>
