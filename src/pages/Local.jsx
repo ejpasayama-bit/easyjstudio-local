@@ -148,7 +148,53 @@ const Local = () => {
         </div>
       </section>
 
-      {/* ④ お問い合わせフォーム */}
+      {/* ④お客様の声（利用者の声） */}
+      <section className="py-16 px-8 max-w-4xl mx-auto">
+        <div className="flex items-center gap-4 mb-12">
+          <h2 className="text-2xl font-bold">制作実績・お客様の声</h2>
+          <div className="h-[1px] bg-slate-200 flex-grow"></div>
+        </div>
+
+        <div className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 relative overflow-hidden">
+          {/* 背景の巨大なクォーテーションアイコン（装飾） */}
+          <svg className="absolute top-4 left-6 w-24 h-24 text-indigo-50 opacity-50 transform -rotate-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+          </svg>
+
+          <div className="relative z-10">
+            {/* ▼ ここに頂いたコメントを貼り付け ▼ */}
+            <p className="text-lg md:text-xl text-slate-700 leading-loose font-medium mb-10">
+              最初に見せていただいたモックや、お伝えしたイメージ通りに作ってもらえました。修正も手早く、伝えたとおりに作成していただき、大変満足しています！
+            </p>
+
+            <div className="flex items-center gap-5">
+              {/* アイコン枠 */}
+              <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-2xl shadow-inner">
+                林
+              </div>
+              <div>
+                <p className="font-bold text-slate-800 text-lg mb-1">林 ひろとし 様</p>
+                
+                {/* 制作したHPへのリンク（URLを書き換えてください。不要なら aタグごと削除してOKです） */}
+                <a 
+                  href="https://hirotoshi884.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-sm font-medium text-indigo-500 hover:text-indigo-700 hover:underline inline-flex items-center"
+                >
+                  制作したWebサイトを見る
+                  <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ⑤ お問い合わせフォーム */}
       <section className="py-16 px-8 max-w-3xl mx-auto mb-24">
         <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-slate-100">
           <h2 className="text-2xl font-bold mb-4 text-center">お問い合わせ・ご相談</h2>
@@ -194,7 +240,6 @@ const Local = () => {
 
             <div>
               <label className="block text-sm font-bold text-slate-700 mb-2">会社名 / 屋号</label>
-              {/* 各inputに name 属性を追加しています */}
               <input type="text" name="company" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" placeholder="例：株式会社〇〇 / 居酒屋〇〇" />
             </div>
             
