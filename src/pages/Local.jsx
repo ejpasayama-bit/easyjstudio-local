@@ -156,7 +156,47 @@ const Local = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           
-          {/* ▼ 1件目の事業者様カード ▼ */}
+          {/* ▼ 1件目 ここから ▼ */}
+          <a 
+            href="https://easyjstudio.com/myoshi" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-md hover:-translate-y-1 transition-all duration-300 group block"
+          >
+            {/* 上部：画像エリア */}
+            <div className="w-full aspect-video bg-slate-100 relative border-b border-slate-100 overflow-hidden flex items-center justify-center">
+              <img 
+                src="/local/1-mostms.webp" 
+                alt="Fukaya HP制作実績" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+            </div>
+            
+            {/* 下部：テキスト・コメントエリア */}
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-lg font-bold text-slate-800 mb-3 border-b border-slate-100 pb-3 flex items-center gap-2">
+                <span className="w-1.5 h-4 bg-indigo-500 rounded-full inline-block"></span>
+                Fukaya ゲーム紹介HP
+              </h3>
+              
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                Fukaya が開発したゲーム”My Oshi Uses Too Much Slang!”の紹介ページです。動画や「スクロールすると項目が浮かぶ機能」を使っています。
+              </p>
+              
+              {/* 制作サイトへのリンク案内 */}
+              <div className="mt-auto">
+                <span className="text-indigo-600 text-xs font-bold group-hover:text-indigo-800 transition-colors inline-flex items-center">
+                  制作したサイトを見る
+                  <svg className="w-3 h-3 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+          {/* ▲ 1件目 ここまで ▲ */}
+
+          {/* ▼ 2件目 ここから ▼ */}
           <a 
             href="https://hirotoshi884.com/" 
             target="_blank" 
@@ -166,7 +206,7 @@ const Local = () => {
             {/* 上部：画像エリア */}
             <div className="w-full aspect-video bg-slate-100 relative border-b border-slate-100 overflow-hidden flex items-center justify-center">
               <img 
-                src="/local/1-hayashi.png" 
+                src="/local/2-hayashi.png" 
                 alt="林ひろとし様 HP制作実績" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
               />
@@ -194,9 +234,9 @@ const Local = () => {
               </div>
             </div>
           </a>
-          {/* ▲ 1件目の事業者様カード ここまで ▲ */}
+          {/* ▲ 2件目 ここまで ▲ */}
 
-          {/* 今後2件目以降が増えたら、上の <a className="...">〜</a> をコピー */}
+          {/* 今後3件目以降が増えたら、上の <a className="...">〜</a> をコピー */}
 
         </div>
       </section>
